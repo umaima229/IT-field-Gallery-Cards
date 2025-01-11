@@ -1,0 +1,90 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #060606;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(23, 92, 164);
+    color:white;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.gallery-item {
+    background-color: #4dabd3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(4, 18, 51, 0.438);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-item h3 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+    color: #000239;
+}
+
+.gallery-item p {
+    font-size: 1rem;
+    color: #050605;
+    margin-top: 10px;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: rgb(23, 94, 164);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
